@@ -15,6 +15,9 @@
 #include <driver/ledc.h>
 #include "driver/gpio.h"
 
+int calculatePWM(int brightnessPercent);
+void setMotorCurrent(int percent);
+
 // ------------------------ Board Info ----------------------------
 #define FIRMWARE_VERSION "0.9.1"
 #define BOARD_NAME "esp32 PCB"
